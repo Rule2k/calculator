@@ -1,4 +1,4 @@
 # calculator
 
-Application calculator simpliste réalisée via React from scratch.
+Une application de calculette très simpliste réalisée via React / Redux from scratch.
 Codée au feeling... will see ;)
