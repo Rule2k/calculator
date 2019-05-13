@@ -1,7 +1,8 @@
 import React from 'react';
+import './button.scss';
 
 const Button = ({ sigle }) => (
-  <div id="button">
+  <div className="button">
     <p>{sigle}</p>
   </div>
 );

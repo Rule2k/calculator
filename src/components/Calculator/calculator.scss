@@ -1,0 +1,14 @@
+#calculator {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.left-button {
+  flex: 1 1 auto;
+}

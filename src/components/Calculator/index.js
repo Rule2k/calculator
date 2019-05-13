@@ -1,31 +1,32 @@
 import React from 'react';
 import Button from 'src/components/Button';
+import './calculator.scss';
 
 const Calculator = () => (
   <div id="calculator">
     <div className="row">
-      <Button className="left-button" sigle="7" />
-      <Button className="left-button" sigle="8" />
-      <Button className="left-button" sigle="9" />
-      <Button className="right-button" sigle="del" />
+      <Button sigle="7" />
+      <Button sigle="8" />
+      <Button sigle="9" />
+      <Button sigle="del" />
     </div>
     <div className="row">
-      <Button className="left-button" sigle="5" />
-      <Button className="left-button" sigle="6" />
-      <Button className="left-button" sigle="7" />
-      <Button className="right-button" sigle="/" />
+      <Button sigle="5" />
+      <Button sigle="6" />
+      <Button sigle="7" />
+      <Button sigle="/" />
     </div>
     <div className="row">
-      <Button className="left-button" sigle="1" />
-      <Button className="left-button" sigle="2" />
-      <Button className="left-button" sigle="3" />
-      <Button className="right-button" sigle="-" />
+      <Button sigle="1" />
+      <Button sigle="2" />
+      <Button sigle="3" />
+      <Button sigle="-" />
     </div>
     <div className="row">
-      <Button className="left-button" sigle="." />
-      <Button className="left-button" sigle="0" />
-      <Button className="left-button" sigle="=" />
-      <Button className="right-button" sigle="del" />
+      <Button sigle="." />
+      <Button sigle="0" />
+      <Button sigle="=" />
+      <Button sigle="+" />
     </div>
   </div>
 );
