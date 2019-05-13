@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Result = () => (
+const Result = ({input}) => (
   <div id="result">
-    <p>Result</p>
+    <p>{input}</p>
   </div>
 );
 

@@ -22,7 +22,7 @@ const reducer = (state = initialState, action = {}) => {
     case NEW_INPUT:
       return {
         ...state,
-        input: action.input,
+        input: state.input + action.input,
       };
     default:
       return state;

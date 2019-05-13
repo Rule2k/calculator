@@ -7,7 +7,7 @@ import React from 'react';
  * Local import
  */
 import Calculator from 'src/components/Calculator';
-import Result from 'src/components/Result';
+import Result from 'src/containers/Result';
 import './app.scss';
 
 /**
