@@ -1,3 +1,5 @@
+const math = require('mathjs');
+
 /**
  * Initial State
  */
@@ -9,6 +11,7 @@ const initialState = {
  * Types
  */
 const NEW_INPUT = 'VALUE';
+const RESULT = 'RESULT';
 
 /**
  * Traitements
@@ -24,6 +27,11 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         input: state.input + action.input,
       };
+    case RESULT:
+      return {
+        ...state,
+        input: math.eval(state.input),
+      };
     default:
       return state;
   }
@@ -35,6 +43,10 @@ const reducer = (state = initialState, action = {}) => {
 export const newInput = input => ({
   type: NEW_INPUT,
   input,
+});
+
+export const result = () => ({
+  type: RESULT,
 });
 
 /**
