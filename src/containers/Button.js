@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Button from 'src/components/Button';
-import { newInput, result } from 'src/store/reducer';
+import { newInput, result, clear } from 'src/store/reducer';
 
 const mapStateToProps = (state, ownProps) => ({});
 
@@ -10,6 +10,9 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   },
   result: () => {
     dispatch(result());
+  },
+  clear: () => {
+    dispatch(clear());
   },
 });
 

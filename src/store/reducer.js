@@ -12,6 +12,7 @@ const initialState = {
  */
 const NEW_INPUT = 'VALUE';
 const RESULT = 'RESULT';
+const CLEAR = 'CLEAR';
 
 /**
  * Traitements
@@ -26,6 +27,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         input: state.input + action.input,
+      };
+    case CLEAR:
+      return {
+        ...state,
+        input: '',
       };
     case RESULT:
       return {
@@ -47,6 +53,10 @@ export const newInput = input => ({
 
 export const result = () => ({
   type: RESULT,
+});
+
+export const clear = () => ({
+  type: CLEAR,
 });
 
 /**
