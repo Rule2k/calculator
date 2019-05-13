@@ -8,12 +8,12 @@ const Calculator = () => (
       <Button sigle="7" />
       <Button sigle="8" />
       <Button sigle="9" />
-      <Button sigle="del" />
+      <Button sigle="*" />
     </div>
     <div className="row">
+      <Button sigle="4" />
       <Button sigle="5" />
       <Button sigle="6" />
-      <Button sigle="7" />
       <Button sigle="/" />
     </div>
     <div className="row">
@@ -23,10 +23,13 @@ const Calculator = () => (
       <Button sigle="-" />
     </div>
     <div className="row">
-      <Button sigle="." />
+      <Button sigle="del" />
       <Button sigle="0" />
-      <Button sigle="=" />
+      <Button sigle="." />
       <Button sigle="+" />
+    </div>
+    <div className="row">
+      <Button sigle="=" />
     </div>
   </div>
 );

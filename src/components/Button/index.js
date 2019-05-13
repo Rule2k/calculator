@@ -3,15 +3,16 @@ import './button.scss';
 
 const Button = ({ sigle, newInput, result, clear }) => {
   const inputHasBeenPressed = () => {
-    if(sigle === '=') {
+    if (sigle === '=') {
       return (
         result()
       );
-    } else if(sigle === 'del') {
+    } else if (sigle === 'del') {
       return (
         clear()
       )
-    } return (
+    } 
+      return (
         newInput(sigle)
       )
   };
