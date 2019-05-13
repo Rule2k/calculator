@@ -6,14 +6,18 @@ import React from 'react';
 /**
  * Local import
  */
-import Example from 'src/containers/Example';
+import Calculator from 'src/components/Calculator';
+import Result from 'src/components/Result';
 import './app.scss';
 
 /**
  * Code
  */
 const App = () => (
-  <Example />
+  <div id="app">
+    <Result />
+    <Calculator />
+  </div>
 );
 
 /**
