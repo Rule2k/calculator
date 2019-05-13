@@ -2,14 +2,13 @@
  * Initial State
  */
 const initialState = {
-  message: 'Hello',
-  clic: 0,
+  input: '',
 };
 
 /**
  * Types
  */
-const DO_SOMETHING = 'DO_SOMETHING';
+const NEW_INPUT = 'VALUE';
 
 /**
  * Traitements
@@ -20,12 +19,11 @@ const DO_SOMETHING = 'DO_SOMETHING';
  */
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case DO_SOMETHING:
+    case NEW_INPUT:
       return {
         ...state,
-        clic: state.clic + 1,
+        input: action.input,
       };
-
     default:
       return state;
   }
@@ -34,8 +32,9 @@ const reducer = (state = initialState, action = {}) => {
 /**
  * Action Creators
  */
-export const doSomething = () => ({
-  type: DO_SOMETHING,
+export const newInput = input => ({
+  type: NEW_INPUT,
+  input,
 });
 
 /**
